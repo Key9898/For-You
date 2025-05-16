@@ -9,7 +9,7 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 50px 0;
             background-color: #f0f8ff;
             display: flex;
             flex-direction: column;
@@ -17,31 +17,51 @@
             align-items: center;
             height: 100vh;
             font-family: 'Pacifico', cursive;
+            overflow: hidden;
         }
         .container {
             text-align: center;
             padding: 20px;
         }
         .message {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #ff69b4;
             margin-bottom: 20px;
+            line-height: 1.6;
         }
         .image-container {
             width: 300px;
             height: auto;
+            margin-bottom: 20px;
+            position: relative;
+            animation: moveToCenter 1.5s ease forwards;
+            opacity: 0;
         }
         .image-container img {
             width: 100%;
             border-radius: 15px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
+        @keyframes moveToCenter {
+            from { transform: translateY(-100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        
-        <div class="message">Thinking of You 💖</div>
+        <div class="message">
+            The sun is setting, Our love is glowing, The stars are twinkling, Our love is growing, <br>
+            Your hand in mine, Your heart so kind, Our love is so divine, It’s too beautiful to define.<br><br>
+            I’ve searched the skies, the deepest sea, For something pure to set me free.<br>
+            Yet all along, it’s always been The way you smile, the way you’ve seen.<br>
+            No diamond shines, no rose can bloom, Like you, who brightens every room.<br>
+            Your voice, a song that calms the night, Your touch, a flame, a guiding light.<br>
+            In crowded worlds, I just see two. My beating heart and only you.<br>
+            No need for grand or distant stars. I’ve found the universe in ours.<br>
+            I love you more than words can show, In ways I doubt you’ll ever know.<br>
+            But still, I’ll write, I’ll speak, I’ll prove. With every breath, you are my love.
+        </div>
         <div class="image-container">
             <img src="images/494813764_674442885455420_4291043811869312397_n.jpg" alt="A beautiful memory with you">
         </div>
